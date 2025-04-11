@@ -10,20 +10,22 @@ const initialNodes = [
       role: "principal",
       title: "Patricio Ojeda Alarcón",
       content: `
-  ● Representar judicial y extrajudicialmente a la municipalidad;
-  ● Proponer al concejo la organización interna de la municipalidad;
+  ● Representar judicial y extrajudicialmente a la municipalidad.
+  ● Proponer al concejo la organización interna de la municipalidad.
   ● Velar por la probidad administrativa dentro del municipio.
   ● Administrar los recursos financieros de la municipalidad.
   ● Administrar los bienes municipales y nacionales de uso público de la comuna que correspondan.
-  ● Otorgar, renovar y poner término a permisos municipales;
-  ● Coordinar el funcionamiento de la municipalidad con los órganos de la Administración del Estado que corresponda;
-  ● Coordinar con los servicios públicos la acción de éstos en el territorio de la comuna;
-  ● Convocar y presidir, con derecho a voto, el concejo; como asimismo, convocar y presidir el Consejo comunal de organizaciones de la sociedad civil;
+  ● Otorgar, renovar y poner término a permisos municipales.
+  ● Coordinar el funcionamiento de la municipalidad con los órganos de la Administración del Estado que corresponda.
+  ● Coordinar con los servicios públicos la acción de éstos en el territorio de la comuna.
+  ● Convocar y presidir, con derecho a voto, el concejo.
+  ● Convocar y presidir el Consejo Comunal de Organizaciones de la Sociedad Civil.
   ● Someter a plebiscito las materias de administración local.
       `,
-      footer: "Ley Nº 18.695, Orgánica Constitucional de Municipalidades",
+      footer: "Ley Nº 18.695 Orgánica Constitucional de Municipalidades",
     },
   },
+
   {
     id: "2",
     type: "PNode",
@@ -33,53 +35,134 @@ const initialNodes = [
       role: "principal",
       title: "Paulina Osses Vásquez",
       content: `
-  ● Tiene la responsabilidad de gestionar el accionar de las secciones en que se subdivide el Departamento Administrativo de Educación Municipal.
-  ● Aprobado mediante Decreto Exento N° 13.413 del 24 de diciembre de 2015; se basa en la distribución jerárquica de unidades que dispone el artículo 15 de la Ley Orgánica Constitucional de Municipalidades y, en este sentido, organiza el Departamento en Secciones y luego en Oficinas, según la naturaleza de las tareas que realiza cada uno de sus funcionarios.
+  ● Responsable de gestionar el accionar de las secciones del Departamento Administrativo de Educación Municipal.
+  ● Aprobado mediante Decreto Exento N° 13.413 del 24 de diciembre de 2015.
+  ● Organiza el Departamento en Secciones y Oficinas según las tareas funcionales de los funcionarios.
       `,
     },
   },
+
+
+
   {
     id: "3",
     type: "SNode",
     position: { x: 900, y: 250 },
-    data: { label: "COORDINADORA ADMINISTRATIVA", role: "secondary" },
+    data: {
+      label: "COORDINADORA ADMINISTRATIVA",
+      role: "secondary",
+      title: "Paulina Osses Vásquez",
+      content: `
+  ● Coordinar las secciones administrativo-financieras, técnico-pedagógicas y social para su buen funcionamiento.
+  ● Reemplazar o subrogar al Jefe DAEM en actividades oficiales, en ausencia formal de éste.
+  ● Participar en reuniones de Directores y otras a que se convoque en el DAEM.
+  ● Mantenerse informado de los estados contables y financieros del DAEM e informar al Jefe DAEM cuando sea necesario o se le solicite.
+  ● Convocar, realizar y/o participar de reuniones técnicas y de coordinación con los encargados de las distintas dependencias que componen el DAEM, previa comunicación e información al Jefe DAEM.
+  ● Apoyar al Jefe DAEM en la coordinación, reuniéndose periódicamente con los Directores de las Unidades Municipales en el Comité Técnico Municipal, con el objeto de planificar las actividades a realizar en el ámbito de la gestión municipal general y participar en las reuniones de Comité Técnico en el DAEM.
+  ● Convocar, realizar y/o participar en reuniones mensuales con todos los Directores de las diferentes unidades educativas municipales, previa comunicación e información al Jefe DAEM.
+  ● Participar en las reuniones del Consejo Comunal de Centros de Padres, para estudiar y resolver situaciones comunes.
+  ● Revisar y visar los contratos del personal docente y asistente de la educación, para completar la dotación de cada establecimiento municipal.
+      `,
+    },
   },
+  
   {
     id: "4",
     type: "SRNode",
     position: { x: 650, y: 400 },
-    data: { label: "JURÍDICO", role: "secondary" },
+    data: {
+      label: "JURÍDICO",
+      role: "secondary",
+      title: "María Jesús Ruiz / Marcelo Valencia",
+      content: `
+  ● Proporcionar asesoría jurídica al Departamento de Administración de Educación Municipal en materia laboral administrativa y en la elaboración de los actos administrativos correspondientes.
+  ● Velar por la correcta aplicación de la normativa laboral administrativa entre las relaciones laborales entre el municipio y el personal dependiente del DAEM, ya sea regido por la ley N°19.070, Código del Trabajo o ley N°19.464, así como en la tramitación de procedimientos disciplinarios instruidos.
+  ● Aprobado mediante Decreto Exento N° 13.413 del 24 de diciembre de 2015; se basa en la distribución jerárquica de unidades que dispone el artículo 15 de la Ley Orgánica Constitucional de Municipalidades y, en este sentido, organiza el Departamento en Secciones y luego en Oficinas, según la naturaleza de las tareas que realiza cada uno de sus funcionarios.
+      `,
+    },
+  }
+,  
+{
+  id: "6",
+  type: "SRNode",
+  position: { x: 650, y: 500 },
+  data: {
+    label: "DIFUSIÓN",
+    role: "secondary",
+    title: "Bárbara Silva Rodríguez",
+    content: `
+● Difusión de actividades propias del DAEM Parral, y de los diferentes establecimientos municipalizados de la comuna.
+● Gestión de prensa, confección de estrategias comunicacionales, posicionamiento de la institución.
+● Generación de material gráfico y publicitario, edición de contenido, análisis de medios y diagnóstico comunicacional.
+● Manejo de redes sociales y plataformas online.
+● Aprobado mediante Decreto Exento N° 13.413 del 24 de diciembre de 2015; se basa en la distribución jerárquica de unidades que dispone el artículo 15 de la Ley Orgánica Constitucional de Municipalidades y, en este sentido, organiza el Departamento en Secciones y luego en Oficinas, según la naturaleza de las tareas que realiza cada uno de sus funcionarios.
+    `,
   },
-  {
-    id: "6",
-    type: "SRNode",
-    position: { x: 650, y: 500 },
-    data: { label: "DIFUSIÓN", role: "secondary" },
+}
+,
+{
+  id: "7",
+  type: "SLNode",
+  position: { x: 1200, y: 500 },
+  data: {
+    label: "OIRS",
+    role: "secondary",
+    title: "Yenifer Urrutia González",
+    content: `
+● Oficina de atención al usuario, recepcionando información, reclamos y sugerencias.
+● Atención ciudadana integral.
+● Aprobado mediante Decreto Exento N° 13.413 del 24 de diciembre de 2015; se basa en la distribución jerárquica de unidades que dispone el artículo 15 de la Ley Orgánica Constitucional de Municipalidades y, en este sentido, organiza el Departamento en Secciones y luego en Oficinas, según la naturaleza de las tareas que realiza cada uno de sus funcionarios.
+    `,
   },
-  {
-    id: "7",
-    type: "SLNode",
-    position: { x: 1200, y: 500 },
-    data: { label: "OIRS", role: "secondary" },
+}
+,
+{
+  id: "8",
+  type: "SRNode",
+  position: { x: 650, y: 600 },
+  data: {
+    label: "V.T.F.",
+    role: "secondary",
+    title: "Karina Hernández",
+    content: `
+● La misión es velar por el desarrollo y promoción de una política para el fortalecimiento del primer nivel educativo.
+● Se encarga de la elaboración, diseño e implementación de políticas y programas orientados a la educación parvularia.
+● Articula mecanismos de coordinación con la comunidad educativa, en especial con las familias, para garantizar un sistema inclusivo, equitativo y de calidad para niños y niñas de 0 a 6 años.
+● Aprobado mediante Decreto Exento N° 13.413 del 24 de diciembre de 2015; se basa en la distribución jerárquica de unidades que dispone el artículo 15 de la Ley Orgánica Constitucional de Municipalidades y, en este sentido, organiza el Departamento en Secciones y luego en Oficinas, según la naturaleza de las tareas que realiza cada uno de sus funcionarios.
+    `,
   },
-  {
-    id: "8",
-    type: "SRNode",
-    position: { x: 650, y: 600 },
-    data: { label: "V.T.F.", role: "secondary" },
+}
+,{
+  id: "9",
+  type: "SLNode",
+  position: { x: 1200, y: 600 },
+  data: {
+    label: "MOVILIZACIÓN",
+    role: "secondary",
+    title: "Juan Carlos Vallejos",
+    content: `
+● Organización y coordinación del servicio de transporte escolar otorgado por el Departamento de Educación Municipal, en los diferentes establecimientos municipalizados de la comuna.
+● Aprobado mediante Decreto Exento N° 13.413 del 24 de diciembre de 2015; se basa en la distribución jerárquica de unidades que dispone el artículo 15 de la Ley Orgánica Constitucional de Municipalidades y, en este sentido, organiza el Departamento en Secciones y luego en Oficinas, según la naturaleza de las tareas que realiza cada uno de sus funcionarios.
+    `,
   },
-  {
-    id: "9",
-    type: "SLNode",
-    position: { x: 1200, y: 600 },
-    data: { label: "MOVILIZACIÓN", role: "secondary" },
+}
+,
+{
+  id: "10",
+  type: "PNode",
+  position: { x: 100, y: 1100 },
+  data: {
+    label: "SECCIÓN RR.HH",
+    role: "principal",
+    title: "Gloria Núñez",
+    content: `
+● Responsable del control de la dotación docente y de asistentes de la educación en los establecimientos municipalizados de Parral.
+● Encargada de la asignación de horas, identificación de funciones específicas y provisión de reemplazos por licencias médicas, permisos u otras causas.
+● Aprobado mediante Decreto Exento N° 13.413 del 24 de diciembre de 2015; se basa en la distribución jerárquica de unidades que dispone el artículo 15 de la Ley Orgánica Constitucional de Municipalidades y, en este sentido, organiza el Departamento en Secciones y luego en Oficinas, según la naturaleza de las tareas que realiza cada uno de sus funcionarios.
+    `,
   },
-  {
-    id: "10",
-    type: "PNode",
-    position: { x: 100, y: 1100 },
-    data: { label: "SECCIÓN RR.HH", role: "principal" },
-  },
+}
+,
 
   // 🔽 Nodos secundarios bajo RRHH
   {

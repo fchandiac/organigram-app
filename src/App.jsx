@@ -1,23 +1,20 @@
-import React, { useEffect, useState, useCallback } from 'react';
+import React, { useEffect, useState, useCallback } from "react";
 import ReactFlow, {
   useReactFlow,
   ReactFlowProvider,
   Background,
-} from 'reactflow';
-import 'reactflow/dist/style.css';
+} from "reactflow";
+import "reactflow/dist/style.css";
 
-import PNode from './PNode';
-import SNode from './SNode';
-import SLNode from './SLNode';
-import SRNode from './SRNode';
+import PNode from "./PNode";
+import SNode from "./SNode";
+import SLNode from "./SLNode";
+import SRNode from "./SRNode";
 
-import { Card, CardContent, Typography, Box, IconButton } from '@mui/material';
-import CloseIcon from '@mui/icons-material/Close';
-import  initialNodes  from './initialNodes';
-import  initialEdges  from './initialEdges';
-
-
-
+import { Card, CardContent, Typography, Box, IconButton } from "@mui/material";
+import CloseIcon from "@mui/icons-material/Close";
+import initialNodes from "./initialNodes";
+import initialEdges from "./initialEdges";
 
 const nodeTypes = {
   PNode: PNode,
@@ -31,15 +28,15 @@ const FlowCanvas = () => {
   const [selectedNode, setSelectedNode] = useState(null);
 
   useEffect(() => {
-    fitView({ padding: 0.2 });
-  }, [fitView]);
+    fitView({ padding: 0.01 });
+  }, []);
 
   const onNodeClick = useCallback((_, node) => {
     setSelectedNode(node);
   }, []);
 
   return (
-    <Box sx={{ width: '100%', height: '100%', position: 'relative' }}>
+    <Box sx={{ width: "100%", height: "100%", position: "relative" }}>
       <ReactFlow
         nodes={initialNodes}
         edges={initialEdges}
@@ -48,8 +45,9 @@ const FlowCanvas = () => {
         panOnDrag
         zoomOnScroll={false}
         nodesDraggable={false}
-        nodesConnectable={false}      // 👈 importante
+        nodesConnectable={false} // 👈 importante
         elementsSelectable={false}
+        defaultViewport={{ x: 0, y: 0, zoom: 0.4 }}
       >
         <Background gap={12} color="#ccc" />
       </ReactFlow>
@@ -57,7 +55,7 @@ const FlowCanvas = () => {
       {selectedNode && (
         <Card
           sx={{
-            position: 'absolute',
+            position: "absolute",
             top: 20,
             right: 20,
             width: 600,
@@ -66,38 +64,45 @@ const FlowCanvas = () => {
           }}
         >
           <CardContent>
-          <CardContent>
-  <Box display="flex" justifyContent="space-between" alignItems="center">
-    <Typography variant="h6">{selectedNode.data.label}</Typography>
-    <IconButton onClick={() => setSelectedNode(null)} size="small">
-      <CloseIcon fontSize="small" />
-    </IconButton>
-  </Box>
+            <CardContent>
+              <Box
+                display="flex"
+                justifyContent="space-between"
+                alignItems="center"
+              >
+                <Typography variant="h6">{selectedNode.data.label}</Typography>
+                <IconButton onClick={() => setSelectedNode(null)} size="small">
+                  <CloseIcon fontSize="small" />
+                </IconButton>
+              </Box>
 
-  {selectedNode.data.title && (
-    <Typography variant="subtitle1" mt={1} fontWeight="bold">
-      {selectedNode.data.title}
-    </Typography>
-  )}
+              {selectedNode.data.title && (
+                <Typography variant="subtitle1" mt={1} fontWeight="bold">
+                  {selectedNode.data.title}
+                </Typography>
+              )}
 
-  {selectedNode.data.content && (
-    <Typography variant="body2" mt={1} sx={{ whiteSpace: "pre-line" }}>
-      {selectedNode.data.content}
-    </Typography>
-  )}
+              {selectedNode.data.content && (
+                <Typography
+                  variant="body2"
+                  mt={1}
+                  sx={{ whiteSpace: "pre-line" }}
+                >
+                  {selectedNode.data.content}
+                </Typography>
+              )}
 
-  {selectedNode.data.footer && (
-    <Typography
-      variant="caption"
-      mt={2}
-      color="text.secondary"
-      sx={{ whiteSpace: "pre-line", display: "block" }}
-    >
-      {selectedNode.data.footer}
-    </Typography>
-  )}
-</CardContent>
-
+              {selectedNode.data.footer && (
+                <Typography
+                  variant="caption"
+                  mt={2}
+                  color="text.secondary"
+                  sx={{ whiteSpace: "pre-line", display: "block" }}
+                >
+                  {selectedNode.data.footer}
+                </Typography>
+              )}
+            </CardContent>
           </CardContent>
         </Card>
       )}
@@ -106,7 +111,7 @@ const FlowCanvas = () => {
 };
 
 const App = () => (
-  <div style={{ width: '100vw', height: '100vh' }}>
+  <div style={{ width: "100vw", height: "100vh" }}>
     <ReactFlowProvider>
       <FlowCanvas />
     </ReactFlowProvider>
