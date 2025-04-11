@@ -5,7 +5,7 @@ const initialNodes = [
     id: "1",
     type: "PNode",
     position: { x: 900, y: 50 },
-    style: {cursor: "pointer"},
+    style: { cursor: "pointer" },
     data: {
       label: "ALCALDE",
       role: "principal",
@@ -31,7 +31,7 @@ const initialNodes = [
     id: "2",
     type: "PNode",
     position: { x: 900, y: 150 },
-    style: {cursor: "pointer"},
+    style: { cursor: "pointer" },
     data: {
       label: "JEFE DAEM",
       role: "principal",
@@ -48,7 +48,7 @@ const initialNodes = [
     id: "3",
     type: "SNode",
     position: { x: 900, y: 250 },
-    style: {cursor: "pointer"},
+    style: { cursor: "pointer" },
     data: {
       label: "COORDINADORA ADMINISTRATIVA",
       role: "secondary",
@@ -71,7 +71,7 @@ const initialNodes = [
     id: "4",
     type: "SRNode",
     position: { x: 650, y: 400 },
-    style: {cursor: "pointer"},
+    style: { cursor: "pointer" },
     data: {
       label: "JURÍDICO",
       role: "secondary",
@@ -87,7 +87,7 @@ const initialNodes = [
     id: "6",
     type: "SRNode",
     position: { x: 650, y: 500 },
-    style: {cursor: "pointer"},
+    style: { cursor: "pointer" },
     data: {
       label: "DIFUSIÓN",
       role: "secondary",
@@ -105,7 +105,7 @@ const initialNodes = [
     id: "7",
     type: "SLNode",
     position: { x: 1200, y: 500 },
-    style: {cursor: "pointer"},
+    style: { cursor: "pointer" },
     data: {
       label: "OIRS",
       role: "secondary",
@@ -121,7 +121,7 @@ const initialNodes = [
     id: "8",
     type: "SRNode",
     position: { x: 650, y: 600 },
-    style: {cursor: "pointer"},
+    style: { cursor: "pointer" },
     data: {
       label: "V.T.F.",
       role: "secondary",
@@ -138,7 +138,7 @@ const initialNodes = [
     id: "9",
     type: "SLNode",
     position: { x: 1200, y: 600 },
-    style: {cursor: "pointer"},
+    style: { cursor: "pointer" },
     data: {
       label: "MOVILIZACIÓN",
       role: "secondary",
@@ -153,7 +153,7 @@ const initialNodes = [
     id: "10",
     type: "PNode",
     position: { x: 100, y: 1100 },
-    style: {cursor: "pointer"},
+    style: { cursor: "pointer" },
     data: {
       label: "SECCIÓN RR.HH",
       role: "principal",
@@ -170,14 +170,14 @@ const initialNodes = [
     id: "11",
     type: "SNode",
     position: { x: 100, y: 1200 },
-    style: {cursor: "pointer"},
+    style: { cursor: "pointer" },
     data: { label: "PERSONAL", role: "secondary" },
   },
   {
     id: "12",
     type: "SNode",
     position: { x: 100, y: 1300 },
-    style: {cursor: "pointer"},
+    style: { cursor: "pointer" },
     data: {
       label: "REMUNERACIONES",
       role: "secondary",
@@ -192,7 +192,7 @@ const initialNodes = [
     id: "13",
     type: "SNode",
     position: { x: 100, y: 1400 },
-    style: {cursor: "pointer"},
+    style: { cursor: "pointer" },
     data: {
       label: "LICENCIAS MÉDICAS",
       role: "secondary",
@@ -210,7 +210,7 @@ const initialNodes = [
     id: "14",
     type: "SNode",
     position: { x: 100, y: 1500 },
-    style: {cursor: "pointer"},
+    style: { cursor: "pointer" },
     data: {
       label: "B.R.P.",
       role: "secondary",
@@ -244,7 +244,7 @@ const initialNodes = [
     id: "17",
     type: "SNode",
     position: { x: 100, y: 1800 },
-    style: {cursor: "pointer"},
+    style: { cursor: "pointer" },
     data: {
       label: "AUXILIARES SERVICIOS MENORES",
       role: "secondary",
@@ -266,7 +266,7 @@ const initialNodes = [
     id: "19",
     type: "SNode",
     position: { x: 100, y: 2000 },
-    style: {cursor: "pointer"},
+    style: { cursor: "pointer" },
     data: {
       label: "O.T. DECRETOS/CONTRATOS",
       role: "secondary",
@@ -296,7 +296,7 @@ const initialNodes = [
     id: "21",
     type: "PNode",
     position: { x: 500, y: 1100 },
-    style: {cursor: "pointer"},
+    style: { cursor: "pointer" },
     data: {
       label: "SECCIÓN U.T.P.",
       role: "principal",
@@ -313,7 +313,7 @@ const initialNodes = [
     id: "22",
     type: "SNode",
     position: { x: 500, y: 1200 },
-    style: {cursor: "pointer"},
+    style: { cursor: "pointer" },
     data: {
       label: "POLÍTICA DOCENTE",
       role: "secondary",
@@ -330,7 +330,7 @@ const initialNodes = [
     id: "23",
     type: "SNode",
     position: { x: 500, y: 1300 },
-    style: {cursor: "pointer"},
+    style: { cursor: "pointer" },
     data: {
       label: "EDUCACIÓN PARVULARIA",
       role: "secondary",
@@ -344,7 +344,7 @@ const initialNodes = [
     id: "24",
     type: "SNode",
     position: { x: 500, y: 1400 },
-    style: {cursor: "pointer"},
+    style: { cursor: "pointer" },
     data: {
       label: "EPJAS Y MICROCENTROS",
       role: "secondary",
@@ -359,7 +359,7 @@ const initialNodes = [
     id: "25",
     type: "SNode",
     position: { x: 500, y: 1500 },
-    style: {cursor: "pointer"},
+    style: { cursor: "pointer" },
     data: {
       label: "P.I.E.",
       role: "secondary",
@@ -374,7 +374,7 @@ const initialNodes = [
     id: "26",
     type: "SNode",
     position: { x: 500, y: 1600 },
-    style: {cursor: "pointer"},
+    style: { cursor: "pointer" },
     data: {
       label: "PME-SEP",
       role: "secondary",
@@ -385,12 +385,12 @@ const initialNodes = [
       `,
     },
   },
-  
+
   {
     id: "27",
     type: "SNode",
     position: { x: 500, y: 1700 },
-    style: {cursor: "pointer"},
+    style: { cursor: "pointer" },
     data: {
       label: "EXTRAESCOLAR E INNOVACIÓN",
       role: "secondary",
@@ -401,44 +401,42 @@ const initialNodes = [
   ● Aprobado mediante Decreto Exento N° 13.413 del 24 de diciembre de 2015; se basa en la distribución jerárquica de unidades que dispone el artículo 15 de la Ley Orgánica Constitucional de Municipalidades y, en este sentido, organiza el Departamento en Secciones y luego en Oficinas, según la naturaleza de las tareas que realiza cada uno de sus funcionarios.
       `,
     },
-  }
-,  
-{
-  id: "28",
-  type: "SNode",
-  position: { x: 500, y: 1800 },
-  style: {cursor: "pointer"},
-  data: {
-    label: "REDES Y ACOMPAÑAMIENTO",
-    role: "secondary",
-    title: "María Isabel Domínguez",
-    content: `
+  },
+  {
+    id: "28",
+    type: "SNode",
+    position: { x: 500, y: 1800 },
+    style: { cursor: "pointer" },
+    data: {
+      label: "REDES Y ACOMPAÑAMIENTO",
+      role: "secondary",
+      title: "María Isabel Domínguez",
+      content: `
 ● Coordinación de las redes de mejoramiento emanadas de la sección.
 ● Coordinación, implementación, monitoreo y seguimiento del Plan de acompañamiento focalizado a los establecimientos que lo requieran según necesidades.
     `,
+    },
   },
-}
-,
-{
-  id: "29",
-  type: "SNode",
-  position: { x: 500, y: 1900 },
-  style: {cursor: "pointer"},
-  data: {
-    label: "EDUCACIÓN MEDIO AMBIENTAL",
-    role: "secondary",
-    title: "Claudia Parra",
-    content: `
+  {
+    id: "29",
+    type: "SNode",
+    position: { x: 500, y: 1900 },
+    style: { cursor: "pointer" },
+    data: {
+      label: "EDUCACIÓN MEDIO AMBIENTAL",
+      role: "secondary",
+      title: "Claudia Parra",
+      content: `
 ● Desarrollar un trabajo colaborativo con el municipio y los establecimientos educacionales que permita ejecutar iniciativas destinadas a la sensibilización, al alineamiento curricular y al desarrollo de acciones efectivas que promuevan una formación en ciudadanía de los estudiantes para el cuidado del medio ambiente.
-● Aprobado mediante Decreto Exento N° 13.413 del 24 de diciembre de 2015; se basa en la distribución jerárquica de unidades que dispone el artículo 15 de la Ley Orgánica Constitucional de Municipalidades y, en este sentido, organiza el Departamento en Secciones y luego en Oficinas, según la naturaleza de las tareas que realiza cada uno de sus funcionarios.`
+● Aprobado mediante Decreto Exento N° 13.413 del 24 de diciembre de 2015; se basa en la distribución jerárquica de unidades que dispone el artículo 15 de la Ley Orgánica Constitucional de Municipalidades y, en este sentido, organiza el Departamento en Secciones y luego en Oficinas, según la naturaleza de las tareas que realiza cada uno de sus funcionarios.`,
+    },
   },
-},
   // 🟦 SECCIÓN SOCIAL
   {
     id: "30",
     type: "PNode",
     position: { x: 900, y: 1100 },
-    style: {cursor: "pointer"},
+    style: { cursor: "pointer" },
     data: {
       label: "SECCIÓN SOCIAL",
       role: "principal",
@@ -446,48 +444,92 @@ const initialNodes = [
       content: `
   ● Brindar apoyo integral a los estudiantes, apoderados y funcionarios, de los Establecimientos Municipalizados de la Comuna de Parral a través de los diversos programas que son ejecutados desde la sección social.
   ● Coordinar y apoyar a los establecimientos educacionales, creando condiciones que favorezcan el bienestar socioemocional de toda la comunidad educativa y con ello mejorar las condiciones de aprendizaje.
-  ● Aprobado mediante Decreto Exento N° 13.413 del 24 de diciembre de 2015; se basa en la distribución jerárquica de unidades que dispone el artículo 15 de la Ley Orgánica Constitucional de Municipalidades y, en este sentido, organiza el Departamento en Secciones y luego en Oficinas, según la naturaleza de las tareas que realiza cada uno de sus funcionarios.`
+  ● Aprobado mediante Decreto Exento N° 13.413 del 24 de diciembre de 2015; se basa en la distribución jerárquica de unidades que dispone el artículo 15 de la Ley Orgánica Constitucional de Municipalidades y, en este sentido, organiza el Departamento en Secciones y luego en Oficinas, según la naturaleza de las tareas que realiza cada uno de sus funcionarios.`,
     },
-  }
-,  
-
+  },
   // 🔽 Nodos secundarios bajo SECCIÓN SOCIAL
   {
     id: "31",
     type: "SNode",
     position: { x: 900, y: 1200 },
-    data: { label: "PROGRAMA H.P.V.", role: "secondary" },
+    style: { cursor: "pointer" },
+    data: {
+      label: "PROGRAMA H.P.V.",
+      role: "secondary",
+      title: "Silvia Soto / Ana María Hernández",
+      content: `
+  ● El Programa acompaña, apoya y asesora con metodologías basadas en la promoción y prevención en salud mental.
+  ● Aprobado mediante Decreto Exento N° 13.413 del 24 de diciembre de 2015; se basa en la distribución jerárquica de unidades que dispone el artículo 15 de la Ley Orgánica Constitucional de Municipalidades y, en este sentido, organiza el Departamento en Secciones y luego en Oficinas, según la naturaleza de las tareas que realiza cada uno de sus funcionarios.`,
+    },
   },
   {
     id: "32",
     type: "SNode",
     position: { x: 900, y: 1300 },
-    data: { label: "PROGRAMA 4 A 7", role: "secondary" },
+    style: { cursor: "pointer" },
+    data: {
+      label: "PROGRAMA 4 A 7",
+      role: "secondary",
+      title: "Marcia Vásquez",
+      content: `
+  ● Entrega un lugar protegido, mientras sus madres o mujeres responsables directas de su cuidado se encuentran trabajando, buscando un trabajo, nivelando estudios o capacitándose para una pronta inserción laboral. Se desarrolla en escuela Luis Armando Gómez y está abierto a toda la comunidad.
+  ● Aprobado mediante Decreto Exento N° 13.413 del 24 de diciembre de 2015; se basa en la distribución jerárquica de unidades que dispone el artículo 15 de la Ley Orgánica Constitucional de Municipalidades y, en este sentido, organiza el Departamento en Secciones y luego en Oficinas, según la naturaleza de las tareas que realiza cada uno de sus funcionarios.`,
+    },
   },
   {
     id: "33",
     type: "SNode",
     position: { x: 900, y: 1400 },
-    data: { label: "CONVIVENCIA ESCOLAR", role: "secondary" },
+    style: { cursor: "pointer" },
+    data: {
+      label: "CONVIVENCIA ESCOLAR",
+      role: "secondary",
+      title: "MARCELO MORALES",
+      content: `● Presente en todos los establecimientos educacionales, con un coordinador comunal y con apoyo jurídico desde el DAEM, con el objetivo de generar un ambiente cordial, de respeto y buen compartir entre los miembros de las diferentes unidades educativas.
+  ● Aprobado mediante Decreto Exento N° 13.413 del 24 de diciembre de 2015; se basa en la distribución jerárquica de unidades que dispone el artículo 15 de la Ley Orgánica Constitucional de Municipalidades y, en este sentido, organiza el Departamento en Secciones y luego en Oficinas, según la naturaleza de las tareas que realiza cada uno de sus funcionarios.`,
+    },
   },
   {
     id: "34",
     type: "SNode",
     position: { x: 900, y: 1500 },
-    data: { label: "PRO-RETENCIÓN", role: "secondary" },
+    style: { cursor: "pointer" },
+    data: {
+      label: "PRO-RETENCIÓN",
+      role: "secondary",
+      title: "EDUARDO DESPOUSE",
+      content: `● Subvención que llega a los sostenedores para que desarrollen acciones en post de lograr retener a sus alumnos en el sistema escolar.
+  ● Aprobado mediante Decreto Exento N° 13.413 del 24 de diciembre de 2015; se basa en la distribución jerárquica de unidades que dispone el artículo 15 de la Ley Orgánica Constitucional de Municipalidades y, en este sentido, organiza el Departamento en Secciones y luego en Oficinas, según la naturaleza de las tareas que realiza cada uno de sus funcionarios.`,
+    },
   },
+
   {
     id: "35",
     type: "SNode",
     position: { x: 900, y: 1600 },
-    data: { label: "SISTEMA DE ADMISIÓN ESCOLAR", role: "secondary" },
+    style: { cursor: "pointer" },
+    data: {
+      label: "SISTEMA DE ADMISIÓN ESCOLAR",
+      role: "secondary",
+      title: "MARCIA VÁSQUEZ",
+      content: `● Sistema de admisión escolar, con postulación online para todos los cursos.
+  ● Aprobado mediante Decreto Exento N° 13.413 del 24 de diciembre de 2015; se basa en la distribución jerárquica de unidades que dispone el artículo 15 de la Ley Orgánica Constitucional de Municipalidades y, en este sentido, organiza el Departamento en Secciones y luego en Oficinas, según la naturaleza de las tareas que realiza cada uno de sus funcionarios.`,
+    },
   },
   {
     id: "36",
     type: "SNode",
     position: { x: 900, y: 1700 },
-    data: { label: "PROGRAMA RESIDENCIA FAMILIAR", role: "secondary" },
+    style: { cursor: "pointer" },
+    data: {
+      label: "PROGRAMA RESIDENCIA FAMILIAR",
+      role: "secondary",
+      title: "PROGRAMA RESIDENCIA FAMILIAR: SILVIA SOTO",
+      content: `● Ofrece una alternativa de vivienda estudiantil a aquellos alumnos de escasos recursos desde 7º año Básico a Cuarto de Enseñanza Media, preferentemente de sectores rurales, que deseen continuar sus estudios, y en cuyos lugares de residencia no existan establecimientos educacionales, con oferta completa hasta alcanzar los 12 años de escolaridad.
+  ● Aprobado mediante Decreto Exento N° 13.413 del 24 de diciembre de 2015; se basa en la distribución jerárquica de unidades que dispone el artículo 15 de la Ley Orgánica Constitucional de Municipalidades y, en este sentido, organiza el Departamento en Secciones y luego en Oficinas, según la naturaleza de las tareas que realiza cada uno de sus funcionarios.`,
+    },
   },
+
   {
     id: "37",
     type: "SNode",
