@@ -5,6 +5,9 @@ import ReactFlow, {
   Background,
 } from "reactflow";
 import "reactflow/dist/style.css";
+import PhoneIcon from "@mui/icons-material/Phone";
+import LocationOnIcon from "@mui/icons-material/LocationOn";
+import AccessTimeIcon from "@mui/icons-material/AccessTime";
 
 import PNode from "./PNode";
 import SNode from "./SNode";
@@ -67,11 +70,20 @@ const FlowCanvas = () => {
             gap={4}
             mt={1}
           >
-            <Typography variant="body2">📞 +56 9 2380 3446</Typography>
-            <Typography variant="body2">📍 Balmaceda 206</Typography>
-            <Typography variant="body2">
-              🕓 Lun-Jue 8:30 - 17:30 | Vie 8:30 - 16:30
-            </Typography>
+            <Box display="flex" alignItems="center" gap={1}>
+              <PhoneIcon fontSize="small" />
+              <Typography variant="body2">+56 9 2380 3446</Typography>
+            </Box>
+            <Box display="flex" alignItems="center" gap={1}>
+              <LocationOnIcon fontSize="small" />
+              <Typography variant="body2">Balmaceda 206</Typography>
+            </Box>
+            <Box display="flex" alignItems="center" gap={1}>
+              <AccessTimeIcon fontSize="small" />
+              <Typography variant="body2">
+                Lun-Jue 8:30 - 17:30 | Vie 8:30 - 16:30
+              </Typography>
+            </Box>
           </Box>
         </Toolbar>
       </AppBar>
@@ -97,7 +109,7 @@ const FlowCanvas = () => {
         <Card
           sx={{
             position: "absolute",
-            top: 80,
+            top: 90,
             right: 20,
             width: 600,
             boxShadow: 6,
