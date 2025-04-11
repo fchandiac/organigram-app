@@ -11,7 +11,15 @@ import SNode from "./SNode";
 import SLNode from "./SLNode";
 import SRNode from "./SRNode";
 
-import { Card, CardContent, Typography, Box, IconButton } from "@mui/material";
+import {
+  AppBar,
+  Toolbar,
+  Typography,
+  IconButton,
+  Box,
+  Card,
+  CardContent,
+} from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
 import initialNodes from "./initialNodes";
 import initialEdges from "./initialEdges";
@@ -29,34 +37,67 @@ const FlowCanvas = () => {
 
   useEffect(() => {
     fitView({ padding: 0.01 });
-  }, []);
+  }, [fitView]);
 
   const onNodeClick = useCallback((_, node) => {
-    setSelectedNode(node);
+    if (node?.data?.content?.trim()) {
+      setSelectedNode(node);
+    }
   }, []);
 
   return (
     <Box sx={{ width: "100%", height: "100%", position: "relative" }}>
-      <ReactFlow
-        nodes={initialNodes}
-        edges={initialEdges}
-        onNodeClick={onNodeClick}
-        nodeTypes={nodeTypes}
-        panOnDrag
-        zoomOnScroll={false}
-        nodesDraggable={false}
-        nodesConnectable={false} // 👈 importante
-        elementsSelectable={false}
-        defaultViewport={{ x: 0, y: 0, zoom: 0.4 }}
-      >
-        <Background gap={12} color="#ccc" />
-      </ReactFlow>
+      <AppBar position="static" sx={{ backgroundColor: "#154977" }}>
+        <Toolbar
+          sx={{
+            flexDirection: "column",
+            alignItems: "flex-start",
+            px: 2,
+            py: 1,
+          }}
+        >
+          <Typography variant="h6" sx={{ fontWeight: "bold" }}>
+            Organigrama DAEM Parral
+          </Typography>
+
+          <Box
+            display="flex"
+            flexDirection="row"
+            flexWrap="wrap"
+            gap={4}
+            mt={1}
+          >
+            <Typography variant="body2">📞 +56 9 2380 3446</Typography>
+            <Typography variant="body2">📍 Balmaceda 206</Typography>
+            <Typography variant="body2">
+              🕓 Lun-Jue 8:30 - 17:30 | Vie 8:30 - 16:30
+            </Typography>
+          </Box>
+        </Toolbar>
+      </AppBar>
+
+      <Box sx={{ height: "calc(100% - 64px)" }}>
+        <ReactFlow
+          nodes={initialNodes}
+          edges={initialEdges}
+          onNodeClick={onNodeClick}
+          nodeTypes={nodeTypes}
+          panOnDrag
+          zoomOnScroll={false}
+          nodesDraggable={false}
+          nodesConnectable={false}
+          elementsSelectable={false}
+          defaultViewport={{ x: 0, y: 0, zoom: 0.4 }}
+        >
+          <Background gap={12} color="#ccc" />
+        </ReactFlow>
+      </Box>
 
       {selectedNode && (
         <Card
           sx={{
             position: "absolute",
-            top: 20,
+            top: 80,
             right: 20,
             width: 600,
             boxShadow: 6,
@@ -64,45 +105,43 @@ const FlowCanvas = () => {
           }}
         >
           <CardContent>
-            <CardContent>
-              <Box
-                display="flex"
-                justifyContent="space-between"
-                alignItems="center"
+            <Box
+              display="flex"
+              justifyContent="space-between"
+              alignItems="center"
+            >
+              <Typography variant="h6">{selectedNode.data.label}</Typography>
+              <IconButton onClick={() => setSelectedNode(null)} size="small">
+                <CloseIcon fontSize="small" />
+              </IconButton>
+            </Box>
+
+            {selectedNode.data.title && (
+              <Typography variant="subtitle1" mt={1} fontWeight="bold">
+                {selectedNode.data.title}
+              </Typography>
+            )}
+
+            {selectedNode.data.content && (
+              <Typography
+                variant="body2"
+                mt={1}
+                sx={{ whiteSpace: "pre-line" }}
               >
-                <Typography variant="h6">{selectedNode.data.label}</Typography>
-                <IconButton onClick={() => setSelectedNode(null)} size="small">
-                  <CloseIcon fontSize="small" />
-                </IconButton>
-              </Box>
+                {selectedNode.data.content}
+              </Typography>
+            )}
 
-              {selectedNode.data.title && (
-                <Typography variant="subtitle1" mt={1} fontWeight="bold">
-                  {selectedNode.data.title}
-                </Typography>
-              )}
-
-              {selectedNode.data.content && (
-                <Typography
-                  variant="body2"
-                  mt={1}
-                  sx={{ whiteSpace: "pre-line" }}
-                >
-                  {selectedNode.data.content}
-                </Typography>
-              )}
-
-              {selectedNode.data.footer && (
-                <Typography
-                  variant="caption"
-                  mt={2}
-                  color="text.secondary"
-                  sx={{ whiteSpace: "pre-line", display: "block" }}
-                >
-                  {selectedNode.data.footer}
-                </Typography>
-              )}
-            </CardContent>
+            {selectedNode.data.footer && (
+              <Typography
+                variant="caption"
+                mt={2}
+                color="text.secondary"
+                sx={{ whiteSpace: "pre-line", display: "block" }}
+              >
+                {selectedNode.data.footer}
+              </Typography>
+            )}
           </CardContent>
         </Card>
       )}

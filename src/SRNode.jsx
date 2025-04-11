@@ -21,7 +21,7 @@ const SRNode = ({ data }) => {
     <Box
       sx={{
         p: 1,
-        minWidth: 280,
+        minWidth: 300,
         minHeight: 50,
         backgroundColor: style.backgroundColor,
         color: style.textColor,

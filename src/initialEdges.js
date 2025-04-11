@@ -12,6 +12,7 @@ const initialEdges = [
     { id: "e3-5", source: "3", target: "5", type: "step", style: { stroke: "#154977", strokeWidth: 2 } },
     { id: "e3-6", source: "3", target: "6", type: "step", style: { stroke: "#154977", strokeWidth: 2 } },
     { id: "e3-7", source: "3", target: "7", type: "step", style: { stroke: "#154977", strokeWidth: 2 } },
+    { id: "e3-79", source: "3", target: "8", type: "step", style: { stroke: "#154977", strokeWidth: 2 } },
     { id: "e3-8", source: "3", target: "9", type: "step", style: { stroke: "#154977", strokeWidth: 2 } },
     { id: "e3-10", source: "3", target: "10", type: "step", style: { stroke: "#154977", strokeWidth: 2 } },
     { id: "e3-21", source: "3", target: "21", type: "step", style: { stroke: "#154977", strokeWidth: 2 } },
