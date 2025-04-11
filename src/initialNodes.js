@@ -42,8 +42,6 @@ const initialNodes = [
     },
   },
 
-
-
   {
     id: "3",
     type: "SNode",
@@ -65,7 +63,7 @@ const initialNodes = [
       `,
     },
   },
-  
+
   {
     id: "4",
     type: "SRNode",
@@ -80,90 +78,84 @@ const initialNodes = [
   ● Aprobado mediante Decreto Exento N° 13.413 del 24 de diciembre de 2015; se basa en la distribución jerárquica de unidades que dispone el artículo 15 de la Ley Orgánica Constitucional de Municipalidades y, en este sentido, organiza el Departamento en Secciones y luego en Oficinas, según la naturaleza de las tareas que realiza cada uno de sus funcionarios.
       `,
     },
-  }
-,  
-{
-  id: "6",
-  type: "SRNode",
-  position: { x: 650, y: 500 },
-  data: {
-    label: "DIFUSIÓN",
-    role: "secondary",
-    title: "Bárbara Silva Rodríguez",
-    content: `
+  },
+  {
+    id: "6",
+    type: "SRNode",
+    position: { x: 650, y: 500 },
+    data: {
+      label: "DIFUSIÓN",
+      role: "secondary",
+      title: "Bárbara Silva Rodríguez",
+      content: `
 ● Difusión de actividades propias del DAEM Parral, y de los diferentes establecimientos municipalizados de la comuna.
 ● Gestión de prensa, confección de estrategias comunicacionales, posicionamiento de la institución.
 ● Generación de material gráfico y publicitario, edición de contenido, análisis de medios y diagnóstico comunicacional.
 ● Manejo de redes sociales y plataformas online.
 ● Aprobado mediante Decreto Exento N° 13.413 del 24 de diciembre de 2015; se basa en la distribución jerárquica de unidades que dispone el artículo 15 de la Ley Orgánica Constitucional de Municipalidades y, en este sentido, organiza el Departamento en Secciones y luego en Oficinas, según la naturaleza de las tareas que realiza cada uno de sus funcionarios.
     `,
+    },
   },
-}
-,
-{
-  id: "7",
-  type: "SLNode",
-  position: { x: 1200, y: 500 },
-  data: {
-    label: "OIRS",
-    role: "secondary",
-    title: "Yenifer Urrutia González",
-    content: `
+  {
+    id: "7",
+    type: "SLNode",
+    position: { x: 1200, y: 500 },
+    data: {
+      label: "OIRS",
+      role: "secondary",
+      title: "Yenifer Urrutia González",
+      content: `
 ● Oficina de atención al usuario, recepcionando información, reclamos y sugerencias.
 ● Atención ciudadana integral.
 ● Aprobado mediante Decreto Exento N° 13.413 del 24 de diciembre de 2015; se basa en la distribución jerárquica de unidades que dispone el artículo 15 de la Ley Orgánica Constitucional de Municipalidades y, en este sentido, organiza el Departamento en Secciones y luego en Oficinas, según la naturaleza de las tareas que realiza cada uno de sus funcionarios.
     `,
+    },
   },
-}
-,
-{
-  id: "8",
-  type: "SRNode",
-  position: { x: 650, y: 600 },
-  data: {
-    label: "V.T.F.",
-    role: "secondary",
-    title: "Karina Hernández",
-    content: `
+  {
+    id: "8",
+    type: "SRNode",
+    position: { x: 650, y: 600 },
+    data: {
+      label: "V.T.F.",
+      role: "secondary",
+      title: "Karina Hernández",
+      content: `
 ● La misión es velar por el desarrollo y promoción de una política para el fortalecimiento del primer nivel educativo.
 ● Se encarga de la elaboración, diseño e implementación de políticas y programas orientados a la educación parvularia.
 ● Articula mecanismos de coordinación con la comunidad educativa, en especial con las familias, para garantizar un sistema inclusivo, equitativo y de calidad para niños y niñas de 0 a 6 años.
 ● Aprobado mediante Decreto Exento N° 13.413 del 24 de diciembre de 2015; se basa en la distribución jerárquica de unidades que dispone el artículo 15 de la Ley Orgánica Constitucional de Municipalidades y, en este sentido, organiza el Departamento en Secciones y luego en Oficinas, según la naturaleza de las tareas que realiza cada uno de sus funcionarios.
     `,
+    },
   },
-}
-,{
-  id: "9",
-  type: "SLNode",
-  position: { x: 1200, y: 600 },
-  data: {
-    label: "MOVILIZACIÓN",
-    role: "secondary",
-    title: "Juan Carlos Vallejos",
-    content: `
+  {
+    id: "9",
+    type: "SLNode",
+    position: { x: 1200, y: 600 },
+    data: {
+      label: "MOVILIZACIÓN",
+      role: "secondary",
+      title: "Juan Carlos Vallejos",
+      content: `
 ● Organización y coordinación del servicio de transporte escolar otorgado por el Departamento de Educación Municipal, en los diferentes establecimientos municipalizados de la comuna.
 ● Aprobado mediante Decreto Exento N° 13.413 del 24 de diciembre de 2015; se basa en la distribución jerárquica de unidades que dispone el artículo 15 de la Ley Orgánica Constitucional de Municipalidades y, en este sentido, organiza el Departamento en Secciones y luego en Oficinas, según la naturaleza de las tareas que realiza cada uno de sus funcionarios.
     `,
+    },
   },
-}
-,
-{
-  id: "10",
-  type: "PNode",
-  position: { x: 100, y: 1100 },
-  data: {
-    label: "SECCIÓN RR.HH",
-    role: "principal",
-    title: "Gloria Núñez",
-    content: `
+  {
+    id: "10",
+    type: "PNode",
+    position: { x: 100, y: 1100 },
+    data: {
+      label: "SECCIÓN RR.HH",
+      role: "principal",
+      title: "Gloria Núñez",
+      content: `
 ● Responsable del control de la dotación docente y de asistentes de la educación en los establecimientos municipalizados de Parral.
 ● Encargada de la asignación de horas, identificación de funciones específicas y provisión de reemplazos por licencias médicas, permisos u otras causas.
 ● Aprobado mediante Decreto Exento N° 13.413 del 24 de diciembre de 2015; se basa en la distribución jerárquica de unidades que dispone el artículo 15 de la Ley Orgánica Constitucional de Municipalidades y, en este sentido, organiza el Departamento en Secciones y luego en Oficinas, según la naturaleza de las tareas que realiza cada uno de sus funcionarios.
     `,
+    },
   },
-}
-,
-
   // 🔽 Nodos secundarios bajo RRHH
   {
     id: "11",
@@ -175,19 +167,53 @@ const initialNodes = [
     id: "12",
     type: "SNode",
     position: { x: 100, y: 1300 },
-    data: { label: "REMUNERACIONES", role: "secondary" },
+    data: {
+      label: "REMUNERACIONES",
+      role: "secondary",
+      title: "Licarayen Jiménez Castillo",
+      content: `
+  ● Organismo encargado del procesamiento de las remuneraciones de los funcionarios de la institución.
+  ● Aprobado mediante Decreto Exento N° 13.413 del 24 de diciembre de 2015; se basa en la distribución jerárquica de unidades que dispone el artículo 15 de la Ley Orgánica Constitucional de Municipalidades y, en este sentido, organiza el Departamento en Secciones y luego en Oficinas, según la naturaleza de las tareas que realiza cada uno de sus funcionarios.
+      `,
+    },
   },
   {
     id: "13",
     type: "SNode",
     position: { x: 100, y: 1400 },
-    data: { label: "LICENCIAS MÉDICAS", role: "secondary" },
+    data: {
+      label: "LICENCIAS MÉDICAS",
+      role: "secondary",
+      title: "Patricia Castillo",
+      content: `
+  ● Recepción, ingreso, tramitación y reporte de licencias médicas a establecimientos educacionales.
+  ● Recepción, ingreso, tramitación y reporte de licencias médicas del postnatal parental a la Inspección del Trabajo.
+  ● Decretar licencias médicas pagadas y rechazadas.
+  ● Atención de público y ventanilla única.
+  ● Conocimiento y aplicación del Reglamento de Licencias Médicas DAEM, por Decreto Exento N° 1785 del 8 de abril de 2024.
+      `,
+    },
   },
   {
     id: "14",
     type: "SNode",
     position: { x: 100, y: 1500 },
-    data: { label: "B.R.P.", role: "secondary" },
+    data: {
+      label: "B.R.P.",
+      role: "secondary",
+      title: "Margarita Amaro",
+      content: `
+  ● Tramitación de las autorizaciones docente al DEPROE.
+  ● Ingresar, registrar y decretar los permisos sin goce de sueldo del DAEM, de los establecimientos educacionales y VTF.
+  ● Ingresar, registrar y decretar los permisos administrativos del DAEM, de los Establecimientos Educacionales y VTF.
+  ● Tramitación de bienios cuando corresponda.
+  ● Revisión de los reportes del reloj control del DAEM, Establecimientos Educacionales y VTF.
+  ● Declaración del BRP ante el CPEiP de los docentes.
+  ● Declaración mensual de los docentes a la Carrera Docente.
+  ● Ingresar, registrar y decretar fianza, viáticos y horas extras, según corresponda.
+  ● Actualizar mensualmente el SIGE del DAEM.
+      `,
+    },
   },
   {
     id: "15",
@@ -205,7 +231,16 @@ const initialNodes = [
     id: "17",
     type: "SNode",
     position: { x: 100, y: 1800 },
-    data: { label: "AUXILIARES SERVICIOS MENORES", role: "secondary" },
+    data: {
+      label: "AUXILIARES SERVICIOS MENORES",
+      role: "secondary",
+      title: "Gloria Núñez",
+      content: `
+  ● Mantención de las dependencias del Departamento de Educación.
+  ● Cuidado y aseo de las dependencias, muebles, enseres e instalaciones.
+  ● Estafeta.
+      `,
+    },
   },
   {
     id: "18",
@@ -217,7 +252,23 @@ const initialNodes = [
     id: "19",
     type: "SNode",
     position: { x: 100, y: 2000 },
-    data: { label: "O.T. DECRETOS/CONTRATOS", role: "secondary" },
+    data: {
+      label: "O.T. DECRETOS/CONTRATOS",
+      role: "secondary",
+      title:
+        "Gloria Núñez, Margarita Amaro, Aida Ortega, Eladia Vásquez, Patricia Castillo",
+      content: `
+  ● Realizar órdenes de trabajo solicitadas por oficio en un plazo de dos días hábiles.
+  ● Confección de contratos y/o decretos, los que son enviados para la revisión de jurídico, posteriormente se suben a SIGNIFLOW para la firma del Jefe DAEM y jurídico, y ser enviados a la municipalidad para el número de decreto y firma del Alcalde y Secretaria Municipal, para finalmente mandar copias al establecimiento y al interesado(a).
+  ● Confeccionar la Planta Docente 2025.
+  ● Revisión del SIGE (Idoneidad Docente).
+  ● Contratación de reemplazos según la necesidad de las Unidades Educativas.
+  ● Contratación de honorarios según necesidad del sistema y de los establecimientos educacionales.
+  ● Confección, tramitación e ingresos de los finiquitos de término de contrato de docentes y asistentes de la educación.
+  ● Ingreso al SIAPER de decretos y contratos.
+  ● Postulación al bono de retiro docente y asistentes de la educación.
+      `,
+    },
   },
   {
     id: "20",
