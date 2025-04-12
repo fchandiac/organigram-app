@@ -38,7 +38,14 @@ const PNode = ({ data }) => {
       }}
     >
       <Handle type="target" position="top" style={{ visibility: 'hidden' }} />
-      <Typography>{data.label}</Typography>
+      <Typography
+        sx={{
+          whiteSpace: 'normal',
+          wordBreak: 'break-word',
+        }}
+      >
+        {data.label}
+      </Typography>
       <Handle type="source" position="bottom" style={{ visibility: 'hidden' }} />
     </Box>
   );

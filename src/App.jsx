@@ -1,14 +1,10 @@
 import React, { useEffect, useState, useCallback } from "react";
-import ReactFlow, {
-  useReactFlow,
-  ReactFlowProvider,
-  Background,
-} from "reactflow";
+import ReactFlow, { ReactFlowProvider, Background } from "reactflow";
 import "reactflow/dist/style.css";
 import PhoneIcon from "@mui/icons-material/Phone";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
-
+import { Controls } from "reactflow";
 import PNode from "./PNode";
 import SNode from "./SNode";
 import SLNode from "./SLNode";
@@ -35,18 +31,28 @@ const nodeTypes = {
 };
 
 const FlowCanvas = () => {
-  const { fitView } = useReactFlow();
+  const [rfInstance, setRfInstance] = useState(null);
   const [selectedNode, setSelectedNode] = useState(null);
 
-  useEffect(() => {
-    fitView({ padding: 0.01 });
-  }, [fitView]);
+  const onInit = (instance) => {
+    setRfInstance(instance);
+  };
 
-  const onNodeClick = useCallback((_, node) => {
-    if (node?.data?.content?.trim()) {
-      setSelectedNode(node);
-    }
-  }, []);
+  const onNodeClick = useCallback(
+    (_, node) => {
+      if (node?.data?.content?.trim()) {
+        setSelectedNode(node);
+
+        if (rfInstance) {
+          rfInstance.setCenter(node.position.x + 400, node.position.y + 100, {
+            zoom: 1,
+            duration: 800,
+          });
+        }
+      }
+    },
+    [rfInstance]
+  );
 
   return (
     <Box sx={{ width: "100%", height: "100%", position: "relative" }}>
@@ -93,15 +99,17 @@ const FlowCanvas = () => {
           nodes={initialNodes}
           edges={initialEdges}
           onNodeClick={onNodeClick}
+          onInit={onInit}
           nodeTypes={nodeTypes}
           panOnDrag
           zoomOnScroll={false}
           nodesDraggable={false}
           nodesConnectable={false}
           elementsSelectable={false}
-          defaultViewport={{ x: 0, y: 0, zoom: 0.4 }}
+          defaultViewport={{ x: 200, y: 20, zoom: 0.4 }}
         >
           <Background gap={12} color="#ccc" />
+          <Controls  position="top-left"/>
         </ReactFlow>
       </Box>
 
@@ -123,7 +131,18 @@ const FlowCanvas = () => {
               alignItems="center"
             >
               <Typography variant="h6">{selectedNode.data.label}</Typography>
-              <IconButton onClick={() => setSelectedNode(null)} size="small">
+              <IconButton
+                onClick={() => {
+                  setSelectedNode(null);
+                  if (rfInstance) {
+                    rfInstance.setViewport(
+                      { x: 200, y: 20, zoom: 0.4 },
+                      { duration: 800 }
+                    );
+                  }
+                }}
+                size="small"
+              >
                 <CloseIcon fontSize="small" />
               </IconButton>
             </Box>

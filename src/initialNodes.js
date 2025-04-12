@@ -1,4 +1,4 @@
-import { RampRightSharp } from "@mui/icons-material";
+import { RampRightSharp, Title } from "@mui/icons-material";
 
 const initialNodes = [
   {
@@ -534,19 +534,50 @@ const initialNodes = [
     id: "37",
     type: "SNode",
     position: { x: 900, y: 1800 },
-    data: { label: "PROGRAMA SALUD ESTUDIANTE", role: "secondary" },
+    style: { cursor: "pointer" },
+    data: {
+      label: "PROGRAMA SALUD ESTUDIANTE",
+      role: "secondary",
+      title: "JULISSA LEYTON",
+      content: `
+  ● Este es un programa de la JUNAEB y las prestaciones se focalizan de la siguiente forma:
+  ● Oftalmología: Alumnos pesquisados en Pre Kínder, 1ero y 6to básico.
+  ● Otorrino: Alumnos pesquisados en Pre Kínder, Kínder y 1ero básico.
+  ● Columna: Alumnos pesquisados en 7o básico.
+      `,
+    },
   },
   {
     id: "38",
     type: "SNode",
     position: { x: 900, y: 1900 },
-    data: { label: "PROGRAMA ALIMENTACIÓN ESCOLAR", role: "secondary" },
+    style: { cursor: "pointer" },
+    data: {
+      label: "PROGRAMA ALIMENTACIÓN ESCOLAR",
+      role: "secondary",
+      title: "MARCELO MORALES",
+      content: `
+  ● El Programa de Alimentación Escolar (PAE), entrega durante el año y a nivel nacional, productos alimenticios a estudiantes en condiciones de desventaja social, económica, psicológica o biológica; que cursen educación parvularia, básica, media o de adultos en Establecimientos Educacionales Municipales, dependiente de Servicios Locales (SLEP) o Particulares Subvencionados adscritos al programa; aportando a los requerimientos nutricionales de cada etapa y facilitando la incorporación y permanencia en el sistema educacional.
+  ● El beneficio lo reciben estudiantes pertenecientes al 60% de las familias más vulnerables o con mayor desventaja socioeconómica.
+  ● Además, el programa beneficia a estudiantes diagnosticados con enfermedad celiaca, por medio de la entrega de una canasta con alimentos libres de gluten.
+  ● El servicio cubre las actividades curriculares y extracurriculares que se desarrollan durante el año académico y en vacaciones de invierno y/o verano.
+      `,
+    },
   },
   {
     id: "39",
     type: "SNode",
     position: { x: 900, y: 2000 },
-    data: { label: "ASISTENCIA Y REVINCULACIÓN", role: "secondary" },
+    style: { cursor: "pointer" },
+    data: {
+      label: "ASISTENCIA Y REVINCULACIÓN",
+      role: "secondary",
+      title: "CLAUDIA GUTIÉRREZ",
+      content: `
+  ● El Programa tiene por objetivo promover la asistencia, permanencia y revinculación de niños, niñas, jóvenes y personas adultas con alto ausentismo y trayectorias educativas interrumpidas, desde una estrategia de coordinación territorial e intersectorial.
+  ● Estos equipos acompañan y orientan a las comunidades educativas en el despliegue de diversas acciones, articulándose con las mismas comunidades, otras instituciones públicas y organizaciones sociales para el desarrollo y ejecución de estrategias directas.
+      `,
+    },
   },
 
   // 🟨 SECCIÓN FINANZAS
@@ -554,45 +585,103 @@ const initialNodes = [
     id: "40",
     type: "PNode",
     position: { x: 1300, y: 1100 },
-    data: { label: "SECCIÓN FINANZAS", role: "principal" },
+    style: { cursor: "pointer" },
+    data: {
+      label: "SECCIÓN FINANZAS",
+      role: "principal",
+      title: "KARINA HERNÁNDEZ",
+      content: `
+  ● Procurar la óptima provisión, asignación, utilización y mantención de los recursos humanos, económicos, financieros y materiales, con que pueda contar el DAEM para su funcionamiento.
+  ● Aprobado mediante Decreto Exento N° 13.413 del 24 de diciembre de 2015; se basa en la distribución jerárquica de unidades que dispone el artículo 15 de la Ley Orgánica Constitucional de Municipalidades y, en este sentido, organiza el Departamento en Secciones y luego en Oficinas, según la naturaleza de las tareas que realiza cada uno de sus funcionarios.
+      `,
+    },
   },
 
   // 🔽 Nodos secundarios bajo SECCIÓN FINANZAS
   {
     id: "41",
     type: "SNode",
+    style: { cursor: "pointer" },
     position: { x: 1300, y: 1200 },
-    data: { label: "CONTABILIDAD", role: "secondary" },
+    data: {
+      label: "CONTABILIDAD",
+      role: "secondary",
+      title: "MARÍA EUGENIA VÁSQUEZ AGUILERAZ",
+      content:
+        "● Encargada de registrar todos los eventos contables de acuerdo a la norma de la Contabilidad Nacional y las instrucciones de la Contraloría General de la República y entregar información económica, financiera y presupuestaria de cada una de las entidades que lo conforman, teniendo por objeto mostrar la imagen fiel del patrimonio, la situación financiera y los estados de resultados.",
+    },
   },
   {
     id: "42",
     type: "SNode",
+    style: { cursor: "pointer" },
     position: { x: 1300, y: 1300 },
-    data: { label: "PRESUPUESTO", role: "secondary" },
+    data: {
+      label: "PRESUPUESTO",
+      role: "secondary",
+      title: "KARINA HERNÁNDEZ ORTEGA",
+      content: `
+  ● Encargada de la realización del presupuesto DAEM, monitorear la ejecución e implementación del presupuesto y realizar las modificaciones presupuestarias, según la normativa vigente.
+      `,
+    },
   },
   {
     id: "43",
     type: "SNode",
     position: { x: 1300, y: 1400 },
-    data: { label: "ADQUISICIONES", role: "secondary" },
+    style: { cursor: "pointer" },
+    data: {
+      label: "ADQUISICIONES",
+      role: "secondary",
+      title: "Alejandro Valdez",
+      content: `
+  ● Realizar los procesos de compras y contrataciones públicas de los bienes y servicios que solicitan los diferentes estamentos adscritos al DAEM Parral y en cumplimiento de la normativa Legal, Ley 19.886.
+  ● Aprobado mediante Decreto Exento N° 13.413 del 24 de diciembre de 2015; se basa en la distribución jerárquica de unidades que dispone el artículo 15 de la Ley Orgánica Constitucional de Municipalidades y, en este sentido, organiza el Departamento en Secciones y luego en Oficinas, según la naturaleza de las tareas que realiza cada uno de sus funcionarios.
+  `,
+    },
   },
   {
     id: "44",
     type: "SNode",
     position: { x: 1300, y: 1500 },
-    data: { label: "INVENTARIO", role: "secondary" },
+    style: { cursor: "pointer" },
+    data: {
+      label: "INVENTARIO",
+      role: "secondary",
+      title: "Luis Álvarez Silva",
+      content: `
+  ● Oficina encargada de registrar todos los bienes muebles adquiridos por los establecimientos Educacionales y Jardines Infantiles VTF y controlar las entradas y salidas de bienes desde la bodega del DAEM.
+  `,
+    },
   },
   {
     id: "45",
     type: "SNode",
     position: { x: 1300, y: 1600 },
-    data: { label: "FAEP", role: "secondary" },
+    style: { cursor: "pointer" },
+    data: {
+      label: "FAEP",
+      role: "secondary",
+      title: "Marjorie Parada",
+      content: `
+  ● Este fondo de Apoyo a la Educación Pública Municipal, asigna recursos para ser utilizados en fines educacionales, principalmente enfocados en el proceso de saneamiento financiero del servicio educacional y fortalecimiento de la calidad de Educación Municipal.
+  ● Aprobado mediante Decreto Exento N° 13.413 del 24 de diciembre de 2015; se basa en la distribución jerárquica de unidades que dispone el artículo 15 de la Ley Orgánica Constitucional de Municipalidades y, en este sentido, organiza el Departamento en Secciones y luego en Oficinas, según la naturaleza de las tareas que realiza cada uno de sus funcionarios.
+  `,
+    },
   },
+
   {
     id: "46",
     type: "SNode",
     position: { x: 1300, y: 1700 },
-    data: { label: "RENDICIONES", role: "secondary" },
+    style: { cursor: "pointer" },
+    data: {
+      label: "RENDICIONES",
+      role: "secondary",
+      title: "",
+      content:
+        "● Encargada de realizar y presentar las distintas rendiciones a la Secreduc y a la Supereduc.",
+    },
   },
 
   // 🟫 SECCIÓN INFRAESTRUCTURA Y REC. OFICIAL
@@ -600,34 +689,85 @@ const initialNodes = [
     id: "47",
     type: "PNode",
     position: { x: 1700, y: 1100 },
-    data: { label: "INFRAESTRUCTURA Y REC. OFICIAL", role: "principal" },
+    style: { cursor: "pointer" },
+    data: {
+      label: "INFRAESTRUCTURA Y REC. OFICIAL",
+      role: "principal",
+      title: "Camilo Fuentes / Jhon Flores",
+      content: `
+  ● Regularizar y normalizar los establecimientos educacionales administrados por el Departamento de Administración de Educación Municipal de Parral.
+  ● Aprobado mediante Decreto Exento N° 13.413 del 24 de diciembre de 2015; se basa en la distribución jerárquica de unidades que dispone el artículo 15 de la Ley Orgánica Constitucional de Municipalidades y, en este sentido, organiza el Departamento en Secciones y luego en Oficinas, según la naturaleza de las tareas que realiza cada uno de sus funcionarios.
+  `
+    }
   },
+  
 
   // 🔽 Nodos secundarios bajo esta sección
   {
     id: "48",
     type: "SNode",
     position: { x: 1700, y: 1200 },
-    data: { label: "SERVICIOS GENERALES", role: "secondary" },
+    style: { cursor: "pointer" },
+    data: {
+      label: "SERVICIOS GENERALES",
+      role: "secondary",
+      title: "Camilo Fuentes",
+      content: `
+  ● Ejecutar reparaciones y trabajos de obras menores en los Establecimientos Educacionales.
+  ● Aprobado mediante Decreto Exento N° 13.413 del 24 de diciembre de 2015; se basa en la distribución jerárquica de unidades que dispone el artículo 15 de la Ley Orgánica Constitucional de Municipalidades y, en este sentido, organiza el Departamento en Secciones y luego en Oficinas, según la naturaleza de las tareas que realiza cada uno de sus funcionarios.
+  `
+    }
   },
+  
   {
     id: "49",
     type: "SNode",
     position: { x: 1700, y: 1300 },
-    data: { label: "PROYECTOS", role: "secondary" },
+    style: { cursor: "pointer" },
+    data: {
+      label: "PROYECTOS",
+      role: "secondary",
+      title: "John Flores",
+      content: `
+  ● Elaborar una batería de proyectos que permitan mejorar, actualizar y/o reparar las condiciones de infraestructuras de los Establecimientos Educacionales.
+  ● Elaborar proyectos de distinta índole (Medio ambiente, energía, cultura, agrícola, técnico profesional, etc.) y fomentar la participación de los Establecimientos Educacionales en los distintos fondos concursables que existen, tanto de entes públicos como de privados.
+  ● Aprobado mediante Decreto Exento N° 13.413 del 24 de diciembre de 2015; se basa en la distribución jerárquica de unidades que dispone el artículo 15 de la Ley Orgánica Constitucional de Municipalidades y, en este sentido, organiza el Departamento en Secciones y luego en Oficinas, según la naturaleza de las tareas que realiza cada uno de sus funcionarios.
+  `
+    }
   },
   {
     id: "50",
     type: "SNode",
     position: { x: 1700, y: 1400 },
-    data: { label: "RECONOCIMIENTO OFICIAL", role: "secondary" },
+    style: { cursor: "pointer" },
+    data: {
+      label: "RECONOCIMIENTO OFICIAL",
+      role: "secondary",
+      title: "John Flores",
+      content: `
+  ● Obtener y/o actualizar el Reconocimiento Oficial de los Establecimientos Educacionales (Escuelas y Jardines Infantiles) administrados por el Depto. Administración de Educación Municipal de Parral, de acuerdo a lo establecido a la Ley General de Educación y Ley N° 20.845 según corresponda.
+  ● Aprobado mediante Decreto Exento N° 13.413 del 24 de diciembre de 2015; se basa en la distribución jerárquica de unidades que dispone el artículo 15 de la Ley Orgánica Constitucional de Municipalidades y, en este sentido, organiza el Departamento en Secciones y luego en Oficinas, según la naturaleza de las tareas que realiza cada uno de sus funcionarios.
+  `
+    }
   },
   {
     id: "51",
     type: "SNode",
     position: { x: 1700, y: 1500 },
-    data: { label: "SEGURIDAD ESCOLAR Y LABORAL", role: "secondary" },
-  },
+    style: { cursor: "pointer" },
+    data: {
+      label: "SEGURIDAD ESCOLAR Y LABORAL",
+      role: "secondary",
+      title: "Camilo Fuentes",
+      content: `
+  ● Mantener las condiciones de infraestructura y seguridad en condiciones óptimas para el buen funcionamiento de los Establecimientos Educacionales.
+  ● Asegurar el cumplimiento de la Ley N° 16.744 sobre accidentes y enfermedades laborales y todas las normas que emanen de la misma, del Código del Trabajo y otras normas que atingen a la Seguridad Laboral en los Establecimientos Educacionales.
+  ● Asegurar el cumplimiento y aplicación del Plan Integral de Seguridad Escolar en los Establecimientos Educacionales.
+  ● Aprobado mediante Decreto Exento N° 13.413 del 24 de diciembre de 2015; se basa en la distribución jerárquica de unidades que dispone el artículo 15 de la Ley Orgánica Constitucional de Municipalidades y, en este sentido, organiza el Departamento en Secciones y luego en Oficinas, según la naturaleza de las tareas que realiza cada uno de sus funcionarios.
+  `
+    }
+  }
+  
 ];
 
 export default initialNodes;
